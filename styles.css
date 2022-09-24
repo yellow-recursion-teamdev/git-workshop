@@ -1,3 +1,6 @@
 * {
 	font-family: 'Potta One', cursive;
 }
+.btn:hover {
+    font-weight: bold;
+}
