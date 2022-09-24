@@ -5,24 +5,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>おみくじアプリ(仮)</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
-			rel="stylesheet"
-		/>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body class="d-flex flex-column bg-warning text-dark h-100">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">おみくじアプリ(仮)</a>
+				<a class="navbar-brand" href="#">おみくじアプリ(仮)</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -37,7 +35,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="#">Home</a>
 						</li>
 					</ul>
 				</div>
@@ -47,28 +45,22 @@
 			<div
 				class="container d-flex flex-column justify-content-center align-items-center p-4"
 			>
-				<div class="text-center pb-4">
-					<h1>おみくじアプリ(仮)</h1>
-				</div>
-				<div class="pb-4">
-					<img
-						width="400"
-						height="400"
-						src="./img/ramen_moyashi.png"
-						alt="なんかいい画像"
-					/>
-				</div>
-				<div class="d-flex justify-content-center pb-4">
-					<button class="btn btn-dark">おみくじを引く</button>
-				</div>
-				<div class="d-flex justify-content-center">
-					<span>
-						<a class="link-dark" href="./about.html">このアプリについて</a>
-					</span>
-					<span class="px-2"> | </span>
-					<span>
-						<a href="#" class="link-dark">開発者一覧</a>
-					</span>
+				<div class="container p-4">
+					<h1>このアプリについて</h1>
+					<p>
+						この「おみくじアプリ(仮)」は，コンピュータサイエンス学習サイト
+						<a href="https://recursionist.io/" class="link-dark">Recursion</a>
+						のサービスのひとつである初心者向けチーム開発プロジェクト（Gitワークショップ）の一環として作成されました。
+					</p>
+					<h2>プロジェクトチームメンバー</h2>
+					<ul>
+						<li>ebisenttt - トップページ，アプリ説明ページ担当</li>
+						<li>koki - おみくじ表示ページ担当</li>
+						<li>masaya888 - 開発メンバーページ担当</li>
+					</ul>
+					<div class="text-center">
+						<a class="btn btn-dark" href="./index.html">トップページに戻る</a>
+					</div>
 				</div>
 			</div>
 		</main>
