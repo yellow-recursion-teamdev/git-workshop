@@ -80,12 +80,11 @@ const randomTech = () => {
 	return oneRarelityTechs[randomIndex];
 };
 
-function insertRandomTechInfo() {
+function insertRandomTechInfo(tech) {
 	const techIcon = document.getElementById('tech-icon');
 	const techName = document.getElementById('tech-name');
 	const techDescription = document.getElementById('tech-description');
 
-	const tech = randomTech();
 	console.log(tech);
 	techIcon.classList.add(tech.faIconClass);
 	techName.innerText = tech.name;
@@ -93,5 +92,7 @@ function insertRandomTechInfo() {
 }
 
 window.onload = (e) => {
-	insertRandomTechInfo();
+	const tech = randomTech();
+	insertRandomTechInfo(tech);
+	localStorage.setItem(tech.name, tech.faIconClass);
 };
