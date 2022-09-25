@@ -25,6 +25,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./animation.css" />
 	</head>
 	<body class="d-flex flex-column bg-warning text-dark h-100">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -50,10 +51,15 @@
 				</div>
 			</div>
 		</nav>
-		<main>
+		<main class="my-auto">
 			<div class="container p-5">
-				<div class="row d-flex flex-column text-center align-items-center">
-					<div class="col-6 border border-5 border-dark rounded py-3">
+				<div
+					class="row d-flex flex-column text-center align-items-center position-relative"
+				>
+					<div
+						id="card"
+						class="col-6 border border-5 border-dark rounded py-3 position-absolute"
+					>
 						<h4 class="border-bottom border-dark py-3">脱！初心者みくじ</h4>
 						<div class="img-container border-bottom border-dark py-3">
 							<i id="tech-icon" class="fa-brands fa-8x"></i>

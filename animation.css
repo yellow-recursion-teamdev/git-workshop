@@ -1,0 +1,45 @@
+#card {
+	transform-origin: 50% 50%;
+	animation: fall 4s linear, closeUp 4s linear forwards,
+		swayAndRotate 1s ease-in-out alternate 4 forwards,
+		showCard 0.5s ease-out 5s forwards;
+}
+
+@keyframes fall {
+	from {
+		top: -500px;
+	}
+	to {
+		top: 0px;
+	}
+}
+
+@keyframes swayAndRotate {
+	from {
+		transform: translateX(100px) rotateX(80deg) rotateY(-20deg) rotateZ(80deg);
+	}
+	to {
+		transform: translateX(-100px) rotateX(10deg) rotateY(-10deg) rotateZ(80deg);
+	}
+}
+
+@keyframes closeUp {
+	from {
+		scale: 0.5;
+	}
+	to {
+		scale: 0.8;
+	}
+}
+
+@keyframes showCard {
+	70% {
+		transform: translateY(-60%);
+		scale: 1.2;
+	}
+
+	100% {
+		transform: translateY(-50%);
+		scale: 1;
+	}
+}
