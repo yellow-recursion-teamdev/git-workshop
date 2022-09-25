@@ -95,3 +95,11 @@ function insertRandomTechInfo() {
 window.onload = (e) => {
 	insertRandomTechInfo();
 };
+
+document
+	.getElementById('again-button')
+	.addEventListener('click', onAgainButtonClicked);
+
+function onAgainButtonClicked() {
+	location.reload();
+}
