@@ -1,10 +1,13 @@
 class Tech {
-	constructor(name, faIconClass, developer, description, rarelity) {
+	constructor(name, faIconClass, rarity, countryIcon, countryName, description, quote, twitterUrl) {
 		this.name = name;
 		this.faIconClass = faIconClass;
-		this.developer = developer;
+		this.rarity = rarity;
+		this.countryIcon = countryIcon;
+		this.countryName = countryName;
 		this.description = description;
-		this.rarelity = rarelity;
+		this.quote = quote;
+		this.twitterUrl = twitterUrl;
 	}
 }
 
