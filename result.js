@@ -98,3 +98,156 @@ function insertRandomTechInfo() {
 window.onload = (e) => {
 	insertRandomTechInfo();
 };
+
+const techList = [
+	{
+		name: '',//taikiさん
+		faIconClass: '',//twitterのロゴ等
+		rarity: '',//レア度
+		countryIcon: './img/japan.svg',
+		countryName: 'Japan',
+		description: '脱！初心者みくじ開発者',
+		quote: '',//好きな格言
+		twitterUrl: 'https://twitter.com/ebisenttt',
+	},
+	{
+		name: '',//masayaさん
+		faIconClass: '',//twitterのロゴ等
+		rarity: '',//レア度
+		countryIcon: './img/japan.svg',
+		countryName: 'Japan',
+		description: '脱！初心者みくじ開発者',
+		quote: '',//好きな格言
+		twitterUrl: '',//twitterアカウント
+	},
+	{
+		name: 'koki_cs',
+		faIconClass: 'cat-in-sunglasses-icon-vector-35392116.jpg',//プルリク時、相談
+		rarity: 'C',
+		countryIcon: './img/japan.svg',
+		countryName: 'Japan',
+		description: '脱！初心者みくじ開発者',
+		quote: 'Compare yourself to who you were yesterday, not to someone else is today.',
+		twitterUrl: 'https://twitter.com/koki_cs',
+	},
+	{
+		name: 'Linus Torvalds',
+		faIconClass: 'fa-linux',
+		rarity: 'S',
+		countryIcon: './img/finland.svg',
+		countryName: 'Finland',
+		description: '主にサーバーで使われているOSであるLinuxの開発者。現在多くの開発現場で使用されているバージョン管理システムであるGitも彼の手によって作られた。',
+		quote: 'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
+		twitterUrl: '',
+	},
+	{
+		name: 'Mark Zuckerberg',
+		faIconClass: 'fa-facebook',
+		rarity: 'A',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: '旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookをリリース。',
+		quote: 'Done is better than perfect.',
+		twitterUrl: '',
+	},
+	{
+		name: 'Bill Gates',
+		faIconClass: 'fa-microsoft',
+		rarity: 'A',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'Microsoftの創設者',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Dennis Ritchie',
+		faIconClass: 'fa-c',
+		rarity: 'S',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'C言語の生みの親。Ken Thompsonと共にUnixオペレーティングシステムの開発にも従事した。',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'James Gosling',
+		faIconClass: 'fa-java',
+		rarity: 'B',
+		countryIcon: './img/canada.svg',
+		countryName: 'Canada',
+		description: 'Java言語の開発者',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Guido van Rossum',
+		faIconClass: 'fa-python',
+		rarity: 'B',
+		countryIcon: './img/netherlands.svg',
+		countryName: 'Netherlands',
+		description: 'Python言語の生みの親',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Tim Berners-Lee',
+		faIconClass: 'fa-html5',
+		rarity: 'A',
+		countryIcon: './img/unitedkingdom.svg',
+		countryName: 'United Kingdom',
+		description: 'HTML,URL,HTTPの基を築いた人物',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Ken Thompson',
+		faIconClass: 'fa-golang',
+		rarity: 'A',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'Go言語を開発した3人の内の1人。Dennis Ritchieと共にUnixオペレーティングシステムの開発に従事。',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Larry Page',
+		faIconClass: 'fa-google',
+		rarity: 'B',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'Googleの創設者',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Drew Houston',
+		faIconClass: 'fa-dropbox',
+		rarity: 'C',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'Dropboxの創設者',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Rasmus Lerdorf',
+		faIconClass: 'fa-php',
+		rarity: 'C',
+		countryIcon: './img/canada.svg',
+		countryName: 'Canada',
+		description: 'PHP言語の開発者',
+		quote: '',
+		twitterUrl: '',
+	},
+	{
+		name: 'Steve Jobs',
+		faIconClass: 'fa-apple',
+		rarity: 'B',
+		countryIcon: './img/unitedstates.svg',
+		countryName: 'United States',
+		description: 'Appleの創設者',
+		quote: '',
+		twitterUrl: '',
+	},
+];
