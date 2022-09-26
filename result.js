@@ -1,5 +1,14 @@
 class Tech {
-	constructor(name, faIconClass, rarity, countryIcon, countryName, description, quote, twitterUrl) {
+	constructor(
+		name,
+		faIconClass,
+		rarity,
+		countryIcon,
+		countryName,
+		description,
+		quote,
+		twitterUrl
+	) {
 		this.name = name;
 		this.faIconClass = faIconClass;
 		this.rarity = rarity;
@@ -101,33 +110,34 @@ window.onload = (e) => {
 
 const techList = [
 	{
-		name: '',//taikiさん
-		faIconClass: '',//twitterのロゴ等
-		rarity: '',//レア度
-		countryIcon: './img/japan.svg',
-		countryName: 'Japan',
-		description: '脱！初心者みくじ開発者',
-		quote: '',//好きな格言
-		twitterUrl: 'https://twitter.com/ebisenttt',
-	},
-	{
-		name: '',//masayaさん
-		faIconClass: '',//twitterのロゴ等
-		rarity: '',//レア度
-		countryIcon: './img/japan.svg',
-		countryName: 'Japan',
-		description: '脱！初心者みくじ開発者',
-		quote: '',//好きな格言
-		twitterUrl: '',//twitterアカウント
-	},
-	{
-		name: 'koki_cs',
-		faIconClass: 'cat-in-sunglasses-icon-vector-35392116.jpg',//プルリク時、相談
+		name: 'ebisenttt',
+		faIconClass: '', //twitterのロゴ等
 		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
 		description: '脱！初心者みくじ開発者',
-		quote: 'Compare yourself to who you were yesterday, not to someone else is today.',
+		quote: 'Everything happens for a reason.',
+		twitterUrl: 'https://twitter.com/ebisenttt',
+	},
+	{
+		name: '', //masayaさん
+		faIconClass: '', //twitterのロゴ等
+		rarity: '', //レア度
+		countryIcon: './img/japan.svg',
+		countryName: 'Japan',
+		description: '脱！初心者みくじ開発者',
+		quote: '', //好きな格言
+		twitterUrl: '', //twitterアカウント
+	},
+	{
+		name: 'koki_cs',
+		faIconClass: 'cat-in-sunglasses-icon-vector-35392116.jpg', //プルリク時、相談
+		rarity: 'C',
+		countryIcon: './img/japan.svg',
+		countryName: 'Japan',
+		description: '脱！初心者みくじ開発者',
+		quote:
+			'Compare yourself to who you were yesterday, not to someone else is today.',
 		twitterUrl: 'https://twitter.com/koki_cs',
 	},
 	{
@@ -136,8 +146,10 @@ const techList = [
 		rarity: 'S',
 		countryIcon: './img/finland.svg',
 		countryName: 'Finland',
-		description: '主にサーバーで使われているOSであるLinuxの開発者。現在多くの開発現場で使用されているバージョン管理システムであるGitも彼の手によって作られた。',
-		quote: 'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
+		description:
+			'主にサーバーで使われているOSであるLinuxの開発者。現在多くの開発現場で使用されているバージョン管理システムであるGitも彼の手によって作られた。',
+		quote:
+			'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
 		twitterUrl: '',
 	},
 	{
@@ -146,7 +158,8 @@ const techList = [
 		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: '旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookをリリース。',
+		description:
+			'旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookをリリース。',
 		quote: 'Done is better than perfect.',
 		twitterUrl: '',
 	},
@@ -166,7 +179,8 @@ const techList = [
 		rarity: 'S',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'C言語の生みの親。Ken Thompsonと共にUnixオペレーティングシステムの開発にも従事した。',
+		description:
+			'C言語の生みの親。Ken Thompsonと共にUnixオペレーティングシステムの開発にも従事した。',
 		quote: '',
 		twitterUrl: '',
 	},
@@ -206,7 +220,8 @@ const techList = [
 		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Go言語を開発した3人の内の1人。Dennis Ritchieと共にUnixオペレーティングシステムの開発に従事。',
+		description:
+			'Go言語を開発した3人の内の1人。Dennis Ritchieと共にUnixオペレーティングシステムの開発に従事。',
 		quote: '',
 		twitterUrl: '',
 	},
