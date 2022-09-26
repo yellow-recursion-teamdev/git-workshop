@@ -116,15 +116,15 @@ const __TECH_LIST__ = [
 		twitterUrl: 'https://twitter.com/ebisenttt',
 	},
 	{
-		name: '', //masayaさん
-		img: null,
-		faIconClass: '', //twitterのロゴ等
-		rarity: '', //レア度
+		name: 'masaya', //masayaさん
+		img: 'masaya.jpg',
+		faIconClass: null, //twitterのロゴ等
+		rarity: 'C', //レア度
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
 		description: '脱！初心者みくじ開発者',
-		quote: '', //好きな格言
-		twitterUrl: '', //twitterアカウント
+		quote: 'Don\'t snivel, it\'ll do nothing to impede the flight of a bullet.', //好きな格言
+		twitterUrl: 'https://twitter.com/StudyEng_NetF', //twitterアカウント
 	},
 	{
 		name: 'koki_cs',
