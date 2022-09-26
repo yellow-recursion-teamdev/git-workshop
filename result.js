@@ -107,7 +107,7 @@ const __TECH_LIST__ = [
 	{
 		name: 'ebisenttt',
 		img: 'ebisenttt.png',
-		faIconClass: null, //twitterのロゴ等
+		faIconClass: null,
 		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
@@ -116,20 +116,21 @@ const __TECH_LIST__ = [
 		twitterUrl: 'https://twitter.com/ebisenttt',
 	},
 	{
-		name: 'masaya', //masayaさん
+		name: 'masaya',
 		img: 'masaya.jpg',
-		faIconClass: null, //twitterのロゴ等
-		rarity: 'C', //レア度
+		faIconClass: null,
+		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
 		description: '脱！初心者みくじ開発者',
-		quote: 'Don\'t snivel, it\'ll do nothing to impede the flight of a bullet.', //好きな格言
-		twitterUrl: 'https://twitter.com/StudyEng_NetF', //twitterアカウント
+		quote:
+			'Don\'t snivel, it\'ll do nothing to impede the flight of a bullet.',
+		twitterUrl: 'https://twitter.com/StudyEng_NetF',
 	},
 	{
 		name: 'koki_cs',
 		faIconClass: null,
-		img: 'cat-in-sunglasses-icon-vector-35392116.jpg', //プルリク時、相談
+		img: 'cat-in-sunglasses-icon-vector-35392116.jpg',
 		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
@@ -146,7 +147,7 @@ const __TECH_LIST__ = [
 		countryIcon: './img/finland.svg',
 		countryName: 'Finland',
 		description:
-			'主にサーバーで使われているOSであるLinuxの開発者。現在多くの開発現場で使用されているバージョン管理システムであるGitも彼の手によって作られた。',
+			'主にサーバー用のOSであるLinuxの開発者。バージョン管理システムGitも彼の手によって作られた。',
 		quote:
 			'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
 		twitterUrl: '',
@@ -159,8 +160,9 @@ const __TECH_LIST__ = [
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
 		description:
-			'旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookをリリース。',
-		quote: 'Done is better than perfect.',
+			'旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookの前身となるアプリを開発。',
+		quote:
+			'Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.',
 		twitterUrl: '',
 	},
 	{
@@ -170,8 +172,9 @@ const __TECH_LIST__ = [
 		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Microsoftの創設者',
-		quote: '',
+		description: 'Microsoftの創設者。ハーバード大学在学中にプログラミング言語BASICを初代マイクロコンピュータ用に開発',
+		quote:
+			'Software is a great combination between Artistry & Engineering.',
 		twitterUrl: '',
 	},
 	{
@@ -182,8 +185,9 @@ const __TECH_LIST__ = [
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
 		description:
-			'C言語の生みの親。Ken Thompsonと共にUnixオペレーティングシステムの開発にも従事した。',
-		quote: '',
+			'C言語の開発者。Ken Thompsonと共に最古のOSであるUnixの開発にも従事した。',
+		quote:
+			'The only way to learn a new programming language is by writing programs in it.',
 		twitterUrl: '',
 	},
 	{
@@ -193,8 +197,9 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/canada.svg',
 		countryName: 'Canada',
-		description: 'Java言語の開発者',
-		quote: '',
+		description: 'オブジェクト指向プログラミング言語Javaの開発者',
+		quote:
+			'If you want to write the software to control the national medical system of a large country, Java is perfect.',
 		twitterUrl: '',
 	},
 	{
