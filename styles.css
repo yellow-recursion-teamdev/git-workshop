@@ -1,6 +1,20 @@
 * {
 	font-family: 'Potta One', cursive;
+	scrollbar-width: none;
 }
+*::-webkit-scrollbar {
+	display: none;
+}
+
 .btn:hover {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+#back-ground {
+	z-index: -1;
+}
+
+.fa-icon {
+	color: black;
+	z-index: -1;
 }
