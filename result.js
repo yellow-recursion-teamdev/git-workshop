@@ -106,8 +106,8 @@ window.onload = (e) => {
 const __TECH_LIST__ = [
 	{
 		name: 'ebisenttt',
-		img: 'ebisenttt.png',
 		faIconClass: null,
+		img: 'ebisenttt.png',
 		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
@@ -117,8 +117,8 @@ const __TECH_LIST__ = [
 	},
 	{
 		name: 'masaya',
-		img: 'masaya.jpg',
 		faIconClass: null,
+		img: 'masaya.jpg',
 		rarity: 'C',
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
@@ -147,10 +147,10 @@ const __TECH_LIST__ = [
 		countryIcon: './img/finland.svg',
 		countryName: 'Finland',
 		description:
-			'主にサーバー用のOSであるLinuxの開発者。バージョン管理システムGitも彼の手によって作られた。',
+			'主にサーバー用のOSであるLinuxの開発者。バージョン管理システムGitも彼が開発した。',
 		quote:
 			'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.',
-		twitterUrl: '',
+		twitterUrl: null,
 	},
 	{
 		name: 'Mark Zuckerberg',
@@ -160,10 +160,10 @@ const __TECH_LIST__ = [
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
 		description:
-			'旧Facebook(現:Meta)の創設者。ハーバード大学在学中にFacebookの前身となるアプリを開発。',
+			'旧Facebook(現:Meta)の創業者。ハーバード大学在学中にFacebookの前身となるアプリを開発。',
 		quote:
 			'Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.',
-		twitterUrl: '',
+		twitterUrl: null,
 	},
 	{
 		name: 'Bill Gates',
@@ -172,23 +172,23 @@ const __TECH_LIST__ = [
 		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Microsoftの創設者。ハーバード大学在学中にプログラミング言語BASICを初代マイクロコンピュータ用に開発',
+		description: 'Microsoftの創業者。ハーバード大学在学中にプログラミング言語BASICを初代マイクロコンピュータ用に開発。',
 		quote:
 			'Software is a great combination between Artistry & Engineering.',
-		twitterUrl: '',
+		twitterUrl: 'https://twitter.com/BillGates',
 	},
 	{
 		name: 'Dennis Ritchie',
 		faIconClass: 'fa-c',
 		img: null,
-		rarity: 'S',
+		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
 		description:
 			'C言語の開発者。Ken Thompsonと共に最古のOSであるUnixの開発にも従事した。',
 		quote:
 			'The only way to learn a new programming language is by writing programs in it.',
-		twitterUrl: '',
+		twitterUrl: null,
 	},
 	{
 		name: 'James Gosling',
@@ -197,10 +197,10 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/canada.svg',
 		countryName: 'Canada',
-		description: 'オブジェクト指向プログラミング言語Javaの開発者',
+		description: 'オブジェクト指向プログラミング言語Javaの開発者。',
 		quote:
 			'If you want to write the software to control the national medical system of a large country, Java is perfect.',
-		twitterUrl: '',
+		twitterUrl: 'https://twitter.com/errcraft',
 	},
 	{
 		name: 'Guido van Rossum',
@@ -209,9 +209,10 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/netherlands.svg',
 		countryName: 'Netherlands',
-		description: 'Python言語の生みの親',
-		quote: '',
-		twitterUrl: '',
+		description: 'プログラミング言語Pythonの開発者。',
+		quote:
+			'Code is read much more often than it is written.',
+		twitterUrl: 'https://twitter.com/gvanrossum',
 	},
 	{
 		name: 'Tim Berners-Lee',
@@ -220,21 +221,23 @@ const __TECH_LIST__ = [
 		rarity: 'A',
 		countryIcon: './img/unitedkingdom.svg',
 		countryName: 'United Kingdom',
-		description: 'HTML,URL,HTTPの基を築いた人物',
-		quote: '',
-		twitterUrl: '',
+		description: 'WWWの概念を考案し現在のwebの礎を築いた人物。HTML,URL,HTTPなどの技術も彼が設計した。',
+		quote:
+			'Data is a precious thing and will last longer than the systems themselves.',
+		twitterUrl: 'https://twitter.com/timberners_lee',
 	},
 	{
 		name: 'Ken Thompson',
 		faIconClass: 'fa-golang',
 		img: null,
-		rarity: 'A',
+		rarity: 'S',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
 		description:
-			'Go言語を開発した3人の内の1人。Dennis Ritchieと共にUnixオペレーティングシステムの開発に従事。',
-		quote: '',
-		twitterUrl: '',
+			'Go言語の共同開発者の1人。Dennis Ritchieと共にUnixオペレーティングシステムの開発に従事。正規表現、UTF-8コードの定義にも貢献。',
+		quote:
+			'One of my most productive days was throwing away 1000 lines of code.',
+		twitterUrl: null,
 	},
 	{
 		name: 'Larry Page',
@@ -243,9 +246,10 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Googleの創設者',
-		quote: '',
-		twitterUrl: '',
+		description: 'Googleの共同創業者。スタンフォード大学博士課程在学時にSergey Brinと共にGoogle社を共同設立。',
+		quote:
+			'Technology should do the hard work so people can do the things that make them the happiest in life.',
+		twitterUrl: null,
 	},
 	{
 		name: 'Drew Houston',
@@ -254,9 +258,10 @@ const __TECH_LIST__ = [
 		rarity: 'C',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Dropboxの創設者',
-		quote: '',
-		twitterUrl: '',
+		description: 'Dropboxの創業者。マスチューセッツ工科大学在学時にSATのオンライン学習システムを開発。',
+		quote:
+			'Failure doesn\'t matter. You only have to be right once',
+		twitterUrl: 'https://twitter.com/drewhouston',
 	},
 	{
 		name: 'Rasmus Lerdorf',
@@ -265,9 +270,10 @@ const __TECH_LIST__ = [
 		rarity: 'C',
 		countryIcon: './img/canada.svg',
 		countryName: 'Canada',
-		description: 'PHP言語の開発者',
-		quote: '',
-		twitterUrl: '',
+		description: 'PHP言語の開発者。',
+		quote:
+			'I actually hate programming, but I love solving problems.',
+		twitterUrl: 'https://twitter.com/rasmus',
 	},
 	{
 		name: 'Steve Jobs',
@@ -276,8 +282,9 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Appleの創設者',
-		quote: '',
-		twitterUrl: '',
+		description: 'Appleの共同創業者。',
+		quote:
+			'Everyone in this country should learn how to program because it teaches you how to think',
+		twitterUrl: null,
 	},
 ];
