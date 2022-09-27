@@ -103,6 +103,15 @@ window.onload = (e) => {
 	localStorage.setItem(tech.name, tech.faIconClass);
 };
 
+
+document
+	.getElementById('again-button')
+	.addEventListener('click', onAgainButtonClicked);
+
+function onAgainButtonClicked() {
+	location.reload();
+}
+
 const __TECH_LIST__ = [
 	{
 		name: 'ebisenttt',
