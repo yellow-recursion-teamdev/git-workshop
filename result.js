@@ -80,6 +80,7 @@ function insertRandomTechInfo(tech) {
 	const techIcon = document.getElementById('tech-icon');
 	const techImg = document.getElementById('tech-image');
 	const techName = document.getElementById('tech-name');
+	const techQuote = document.getElementById('tech-quote');
 	const techDescription = document.getElementById('tech-description');
 
 	console.log(tech);
@@ -94,6 +95,7 @@ function insertRandomTechInfo(tech) {
 		techImg.setAttribute('height', '80%');
 	}
 	techName.innerText = tech.name;
+	techQuote.innerText = tech.quote;
 	techDescription.innerText = tech.description;
 }
 
@@ -102,7 +104,6 @@ window.onload = (e) => {
 	insertRandomTechInfo(tech);
 	localStorage.setItem(tech.name, tech.faIconClass);
 };
-
 
 document
 	.getElementById('again-button')
@@ -132,8 +133,7 @@ const __TECH_LIST__ = [
 		countryIcon: './img/japan.svg',
 		countryName: 'Japan',
 		description: '脱！初心者みくじ開発者',
-		quote:
-			'Don\'t snivel, it\'ll do nothing to impede the flight of a bullet.',
+		quote: "Don't snivel, it'll do nothing to impede the flight of a bullet.",
 		twitterUrl: 'https://twitter.com/StudyEng_NetF',
 	},
 	{
@@ -181,9 +181,9 @@ const __TECH_LIST__ = [
 		rarity: 'A',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Microsoftの創業者。ハーバード大学在学中にプログラミング言語BASICを初代マイクロコンピュータ用に開発。',
-		quote:
-			'Software is a great combination between Artistry & Engineering.',
+		description:
+			'Microsoftの創業者。ハーバード大学在学中にプログラミング言語BASICを初代マイクロコンピュータ用に開発。',
+		quote: 'Software is a great combination between Artistry & Engineering.',
 		twitterUrl: 'https://twitter.com/BillGates',
 	},
 	{
@@ -219,8 +219,7 @@ const __TECH_LIST__ = [
 		countryIcon: './img/netherlands.svg',
 		countryName: 'Netherlands',
 		description: 'プログラミング言語Pythonの開発者。',
-		quote:
-			'Code is read much more often than it is written.',
+		quote: 'Code is read much more often than it is written.',
 		twitterUrl: 'https://twitter.com/gvanrossum',
 	},
 	{
@@ -230,7 +229,8 @@ const __TECH_LIST__ = [
 		rarity: 'A',
 		countryIcon: './img/unitedkingdom.svg',
 		countryName: 'United Kingdom',
-		description: 'WWWの概念を考案し現在のwebの礎を築いた人物。HTML,URL,HTTPなどの技術も彼が設計した。',
+		description:
+			'WWWの概念を考案し現在のwebの礎を築いた人物。HTML,URL,HTTPなどの技術も彼が設計した。',
 		quote:
 			'Data is a precious thing and will last longer than the systems themselves.',
 		twitterUrl: 'https://twitter.com/timberners_lee',
@@ -255,7 +255,8 @@ const __TECH_LIST__ = [
 		rarity: 'B',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Googleの共同創業者。スタンフォード大学博士課程在学時にSergey Brinと共にGoogle社を共同設立。',
+		description:
+			'Googleの共同創業者。スタンフォード大学博士課程在学時にSergey Brinと共にGoogle社を共同設立。',
 		quote:
 			'Technology should do the hard work so people can do the things that make them the happiest in life.',
 		twitterUrl: null,
@@ -267,9 +268,9 @@ const __TECH_LIST__ = [
 		rarity: 'C',
 		countryIcon: './img/unitedstates.svg',
 		countryName: 'United States',
-		description: 'Dropboxの創業者。マスチューセッツ工科大学在学時にSATのオンライン学習システムを開発。',
-		quote:
-			'Failure doesn\'t matter. You only have to be right once',
+		description:
+			'Dropboxの創業者。マスチューセッツ工科大学在学時にSATのオンライン学習システムを開発。',
+		quote: "Failure doesn't matter. You only have to be right once",
 		twitterUrl: 'https://twitter.com/drewhouston',
 	},
 	{
@@ -280,8 +281,7 @@ const __TECH_LIST__ = [
 		countryIcon: './img/canada.svg',
 		countryName: 'Canada',
 		description: 'PHP言語の開発者。',
-		quote:
-			'I actually hate programming, but I love solving problems.',
+		quote: 'I actually hate programming, but I love solving problems.',
 		twitterUrl: 'https://twitter.com/rasmus',
 	},
 	{
