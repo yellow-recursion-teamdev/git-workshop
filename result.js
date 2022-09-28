@@ -91,8 +91,8 @@ function insertRandomTechInfo(tech) {
 		console.log('tech.img is not null');
 		console.log(tech.imgUrl);
 		techImg.setAttribute('src', tech.imgUrl);
-		techImg.setAttribute('width', '80%');
-		techImg.setAttribute('height', '80%');
+		techImg.setAttribute('width', '128');
+		techImg.setAttribute('height', '128');
 	}
 	techName.innerText = tech.name;
 	techQuote.innerText = tech.quote;
