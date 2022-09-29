@@ -1,6 +1,9 @@
+import { __TECH_LIST__ } from './techlist.js';
+
+const __COLLECTION_KEY__ = 'omikuji-collection';
+
 function addIcons() {
 	const techIconClasses = techIconClassesInLocalStorage();
-	console.log(techIconClasses);
 	if (!techIconClasses.length) return;
 	const icons = techIconClasses
 		.concat(techIconClasses)
@@ -18,7 +21,6 @@ function addIcons() {
 			);
 			const anime = randomAnimation();
 			icon.animate(anime.keyframes, anime.detail);
-			console.log(anime.keyframes, anime.detail);
 			return icon;
 		});
 
@@ -29,16 +31,27 @@ function addIcons() {
 }
 
 const techIconClassesInLocalStorage = () => {
-	let iconClasses = [];
-	for (const key in localStorage) {
-		const val = localStorage[key];
-		if (typeof val === 'string' && val.substring(0, 3) === 'fa-') {
-			iconClasses.push(val);
-		}
-	}
+	const collection = JSON.parse(localStorage.getItem(__COLLECTION_KEY__));
+	if (!collection) return [];
+	const iconClasses = collection.filter(
+		(val) => typeof val === 'string' && val.substring(0, 3) === 'fa-'
+	);
 	return iconClasses;
 };
 
+function insertTechIconCounterText() {
+	const counter = document.getElementById('counter');
+
+	const countAllTech = __TECH_LIST__.length;
+	const myTech = JSON.parse(localStorage.getItem(__COLLECTION_KEY__));
+	const myTechUnique = [...new Set(myTech)];
+	const countMyTech = myTechUnique.length;
+
+	counter.innerText = `${countMyTech} / ${countAllTech}`;
+}
+
 window.onload = (e) => {
+	console.log(localStorage);
 	addIcons();
+	insertTechIconCounterText();
 };
