@@ -80,21 +80,31 @@ function insertRandomTechInfo(tech) {
 	const techIcon = document.getElementById('tech-icon');
 	const techImg = document.getElementById('tech-image');
 	const techName = document.getElementById('tech-name');
+	const techCountryFlag = document.getElementById('tech-country-flag');
+	const techCountryName = document.getElementById('tech-country-name');
 	const techQuote = document.getElementById('tech-quote');
 	const techDescription = document.getElementById('tech-description');
 
 	console.log(tech);
 	if (tech.faIconClass !== null) {
 		techIcon.classList.add(tech.faIconClass);
+		if (window.innerWidth < 768) {
+			techIcon.classList.add('fa-4x');
+		} else {
+			techIcon.classList.add('fa-6x');
+		}
 	}
 	if (tech.img !== null) {
 		console.log('tech.img is not null');
 		console.log(tech.imgUrl);
 		techImg.setAttribute('src', tech.imgUrl);
-		techImg.setAttribute('width', '128');
-		techImg.setAttribute('height', '128');
+		const widthAndHeight = window.innerWidth < 768 ? '64' : '96';
+		techImg.setAttribute('width', widthAndHeight);
+		techImg.setAttribute('height', widthAndHeight);
 	}
 	techName.innerText = tech.name;
+	techCountryFlag.setAttribute('src', tech.countryIcon);
+	techCountryName.innerText = tech.countryName;
 	techQuote.innerText = tech.quote;
 	techDescription.innerText = tech.description;
 }

@@ -6,6 +6,11 @@
 	display: none;
 }
 
+nav,
+footer {
+	z-index: 1;
+}
+
 .btn:hover {
 	font-weight: bold;
 }
