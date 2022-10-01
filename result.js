@@ -77,7 +77,7 @@ const randomTech = () => {
 	const oneRarityTechs = techs.filter((tech) => tech.rarity === rarity);
 	if (!oneRarityTechs.length) {
 		console.log(Error('該当するレアリティのTechが見つかりませんでした'));
-		return techs[randomInt(__TECH_LIST__.length - 1)];
+		return techs[randomInt(__TECH_LIST__.length)];
 	}
 	const randomIndex = randomInt(oneRarityTechs.length);
 	return oneRarityTechs[randomIndex];
