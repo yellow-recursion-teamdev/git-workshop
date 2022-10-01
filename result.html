@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="脱！初心者みくじ" />
+		<meta
+			name="twitter:description"
+			content="Recursionのチーム開発プログラムで作成したおみくじWebアプリ"
+		/>
+		<meta name="twitter:image" content="./img/ramen_moyashi.png" />
 		<title>脱！初心者みくじ</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +32,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./animation.css" />
 		<link rel="icon" href="img/ramen_moyashi.png" />
 	</head>
 	<body class="d-flex flex-column bg-warning text-dark h-100">
@@ -57,39 +65,59 @@
 				</div>
 			</div>
 		</nav>
-		<main class="m-auto position-relative">
-			<div
-				class="container d-flex flex-column justify-content-center align-items-center p-4"
-			>
-				<div class="text-center pb-4">
-					<h1>脱！初心者みくじ</h1>
-				</div>
-				<div class="pb-4 d-flex justify-content-center">
-					<img
-						width="100%"
-						src="./img/beginner_developer.jpg"
-						alt="top_imageq"
-						class="border border-5 border-dark"
-					/>
-				</div>
-				<div class="text-center pb-4">
-					<p><span>引いたおみくじ : </span><span id="counter"></span></p>
-				</div>
-				<div class="d-flex justify-content-center pb-4">
-					<a class="btn btn-dark" href="./result.html">おみくじを引く</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<span>
-						<a class="link-dark text-nowrap" href="./about.html"
-							>このアプリについて</a
+		<main class="my-auto">
+			<div class="container p-5">
+				<div
+					class="row d-flex flex-column text-center align-items-center position-relative"
+				>
+					<div
+						id="card"
+						class="col-12 col-md-8 bg-light border border-5 border-dark rounded py-3 position-absolute"
+					>
+						<h4 class="border-bottom border-dark py-3 mb-0">
+							脱！初心者みくじ
+						</h4>
+						<div class="border-bottom border-dark">
+							<div class="image-container my-2 my-md-4">
+								<i id="tech-icon" class="fa-brands"></i>
+								<img id="tech-image" />
+							</div>
+						</div>
+						<div class="border-bottom border-dark py-1 py-md-3 mb-1 mb-md-3">
+							<p class="mb-1 mb-md-3">
+								<span id="tech-name" class="fs-4 align-middle"></span>
+							</p>
+							<p class="mb-1 mb-md-3">
+								<img id="tech-country-flag" width="48" height="27" />
+								<span id="tech-country-name"></span>
+							</p>
+							<p id="tech-quote" class="fst-italic mb-1 mb-md-3"></p>
+							<p id="tech-description" class="mb-1 mb-md-3"></p>
+						</div>
+						<a
+							href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+							class="twitter-share-button"
+							data-size="large"
+							data-hashtags="Recursion,チーム開発"
+							data-show-count="false"
+							>Tweet</a
 						>
-					</span>
-					<span class="px-2"> | </span>
-					<span>
-						<a href="./developers.html" class="link-dark text-nowrap"
-							>開発者一覧</a
-						>
-					</span>
+						<script
+							async
+							src="https://platform.twitter.com/widgets.js"
+							charset="utf-8"
+						></script>
+						<div class="container">
+							<button id="again-button" class="col-5 btn btn-dark">
+								<span class="d-none d-md-inline">もう一度引く</span>
+								<span class="d-inline d-md-none">もう一回</span>
+							</button>
+							<a class="col-5 btn btn-dark" href="./index.html">
+								<span class="d-none d-md-inline">トップページへ</span>
+								<span class="d-inline d-md-none">トップへ</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -104,6 +132,10 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"
 	></script>
-	<script type="module" src="index.js"></script>
-	<script src="index_animation.js"></script>
+	<script
+		async
+		src="https://platform.twitter.com/widgets.js"
+		charset="utf-8"
+	></script>
+	<script type="module" src="result.js"></script>
 </html>

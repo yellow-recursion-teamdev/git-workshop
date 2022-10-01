@@ -17,16 +17,10 @@
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
 		<link rel="stylesheet" href="./styles.css" />
 		<link rel="icon" href="img/ramen_moyashi.png" />
 	</head>
+
 	<body class="d-flex flex-column bg-warning text-dark h-100">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
@@ -57,39 +51,26 @@
 				</div>
 			</div>
 		</nav>
-		<main class="m-auto position-relative">
+		<main class="m-auto">
 			<div
 				class="container d-flex flex-column justify-content-center align-items-center p-4"
 			>
-				<div class="text-center pb-4">
-					<h1>脱！初心者みくじ</h1>
+				<div class="card p-5 mb-5 border-dark border-5 bg-warning">
+					<h3><strong>開発者一覧</strong></h3>
+					<li>
+						<a href="http://twitter.com/ebisenttt">ebisenttt</a> -
+						トップページ，アプリ説明ページ担当
+					</li>
+					<li>
+						<a href="https://twitter.com/StudyEng_NetF">Masaya</a> - 開発メンバーページ担当
+					</li>
+					<li>
+						<a href="http://twitter.com/koki_cs">Koki</a> -
+						おみくじ表示ページ担当
+					</li>
 				</div>
-				<div class="pb-4 d-flex justify-content-center">
-					<img
-						width="100%"
-						src="./img/beginner_developer.jpg"
-						alt="top_imageq"
-						class="border border-5 border-dark"
-					/>
-				</div>
-				<div class="text-center pb-4">
-					<p><span>引いたおみくじ : </span><span id="counter"></span></p>
-				</div>
-				<div class="d-flex justify-content-center pb-4">
-					<a class="btn btn-dark" href="./result.html">おみくじを引く</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<span>
-						<a class="link-dark text-nowrap" href="./about.html"
-							>このアプリについて</a
-						>
-					</span>
-					<span class="px-2"> | </span>
-					<span>
-						<a href="./developers.html" class="link-dark text-nowrap"
-							>開発者一覧</a
-						>
-					</span>
+				<div class="text-center">
+					<a class="btn btn-dark" href="./index.html">トップページに戻る</a>
 				</div>
 			</div>
 		</main>
@@ -104,6 +85,4 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"
 	></script>
-	<script type="module" src="index.js"></script>
-	<script src="index_animation.js"></script>
 </html>
