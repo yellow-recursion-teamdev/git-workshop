@@ -79,7 +79,7 @@ const randomTech = () => {
 		console.log(Error('該当するレアリティのTechが見つかりませんでした'));
 		return techs[randomInt(__TECH_LIST__.length - 1)];
 	}
-	const randomIndex = randomInt(oneRarityTechs.length - 1);
+	const randomIndex = randomInt(oneRarityTechs.length);
 	return oneRarityTechs[randomIndex];
 };
 
@@ -138,4 +138,3 @@ document
 function onAgainButtonClicked() {
 	location.reload();
 }
-
