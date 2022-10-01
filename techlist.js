@@ -55,8 +55,7 @@ export const __TECH_LIST__ = [
 		countryName: 'United States',
 		description:
 			'旧Facebook(現:Meta)の創業者。ハーバード大学在学中にFacebookの前身となるアプリを開発。',
-		quote:
-			'Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.',
+		quote: 'Done is better than perfect.',
 		twitterUrl: null,
 	},
 	{
@@ -178,7 +177,7 @@ export const __TECH_LIST__ = [
 		countryName: 'United States',
 		description: 'Appleの共同創業者。',
 		quote:
-			'Everyone in this country should learn how to program because it teaches you how to think',
+			'Everyone in this country should learn how to program because it teaches you how to think.',
 		twitterUrl: null,
 	},
 ];
